@@ -19,7 +19,7 @@ pseudob<-df$PseudoB[item]
 pseudoa<-df$PseudoA[item]
 eq <- function(x){c + ((1-c)*(1/(1+2.71828^(-1.7*(pseudoa*(x-pseudob))))))}#FUNCTION THAT CREATES ICC BASED ON pseudob AND pseudoa
 
-p1<-curve(eq, col="red", xlim=c(-100,100))#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
+p1<-curve(eq, col="red", xlim=c(-4,4), main="Item Characteristic Curve")#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
 p1
 }
 
