@@ -1,4 +1,4 @@
-myfun<-function(x){data<-read.csv("simulated_data.csv", header=FALSE)#LOADING SIMULATED DATA
+icc<-function(data, item){
 pseudob<-0 #JUST CREATING A PLACEHOLDER FOR pseudob SO THE FUNCTION BELOW CAN RUN
 ahat<-function(x){
   r<-(((2.71828)^x)-(1/(2.71828)^x))/(2.71828-(2.71828)^x)
@@ -15,9 +15,11 @@ pseudoB<-data.frame(qnorm(colMeans(data)))#CALCULATING THE CTT-B PARAMETER, WHIC
 df<-as.data.frame(cbind(citcs, pseudoA, pseudoB))#PUTTING ALL RELEVANT STATISTIC TOGETHER
 colnames(df)<-c("CITC", "PseudoA", "PseudoB")#RENAMING COLUMN HEADERS
 c<-0
+pseudob<-df$PseudoB[item]
+pseudoa<-df$PseudoA[item]
 eq <- function(x){c + ((1-c)*(1/(1+2.71828^(-1.7*(pseudoa*(x-pseudob))))))}#FUNCTION THAT CREATES ICC BASED ON pseudob AND pseudoa
 
-p1<-curve(eq, col="red")#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
+p1<-curve(eq, col="red", xlim=c(-100,100))#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
 p1
 }
 
