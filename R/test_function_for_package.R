@@ -23,3 +23,9 @@ p1<-curve(eq, col="red", xlim=c(-4,4), main="Item Characteristic Curve")#PLOTTIN
 p1
 }
 
+library(psych)                            ## Need to add this as dependency
+data <- read.csv("testdata.csv")          ## Example data, maybe add within package
+
+icc(data,2)
+
+
