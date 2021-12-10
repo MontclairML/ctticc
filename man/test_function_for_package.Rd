@@ -1,11 +1,11 @@
-\name{test_function_for_package}
-\alias{test_function_for_package}
+\name{CTTicc}
+\alias{Classical Test Theory Item Characteristic Curves}
 %- Also NEED an '\alias' for EACH other topic documented here.
-\title{test_function_for_package
+\title{Classical Test Theory Item Characteristic Curves
 %%  ~~function to do ... ~~
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Provides a visual representation of item difficulty and discrimination from p-value and corrected item-total correlation indices.
 }
 \usage{
 test_function_for_package(x)
@@ -30,7 +30,9 @@ test_function_for_package(x)
 %% ~put references to the literature/web site here ~
 }
 \author{
-%%  ~~who you are~~
+Diego Figueiras (figueirasd1@montclair.edu)
+
+John Kulas (kulasj@montclair.edu)
 }
 \note{
 %%  ~~further notes~~
