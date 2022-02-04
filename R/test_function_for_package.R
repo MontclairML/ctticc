@@ -1,4 +1,5 @@
 icc<-function(data, item){
+  library(psych)
 pseudob<-0 #JUST CREATING A PLACEHOLDER FOR pseudob SO THE FUNCTION BELOW CAN RUN
 ahat<-function(x){
   r<-(((2.71828)^x)-(1/(2.71828)^x))/(2.71828-(2.71828)^x)
@@ -17,10 +18,13 @@ colnames(df)<-c("CITC", "PseudoA", "PseudoB")#RENAMING COLUMN HEADERS
 c<-0
 pseudob<-df$PseudoB[item]
 pseudoa<-df$PseudoA[item]
+# pseudob
+# pseudoa
 eq <- function(x){c + ((1-c)*(1/(1+2.71828^(-1.7*(pseudoa*(x-pseudob))))))}#FUNCTION THAT CREATES ICC BASED ON pseudob AND pseudoa
 
-p1<-curve(eq, col="red", xlim=c(-4,4), ylim=c(0,1), main="Item Characteristic Curve")#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
-p1
+curve(eq, col="red", xlim=c(-4,4), ylim=c(0,1), main="Item Characteristic Curve")#PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
+output<-cbind(pseudob, pseudoa)
+return(output)
 }
 
 # library(psych)                            ## Need to add this as dependency
@@ -28,4 +32,6 @@ p1
 # data<- na.omit(data)
 # icc(data,2)
 # library(cttv)
+
+icc(testdata, 3:20)
 
