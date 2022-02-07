@@ -1,4 +1,4 @@
-icc<-function(data, item){
+icc<-function(data, item, plot){
   library(psych)
 pseudob<-0 #JUST CREATING A PLACEHOLDER FOR pseudob SO THE FUNCTION BELOW CAN RUN
 ahat<-function(x){
@@ -24,7 +24,10 @@ pseudoa<-df$PseudoA[item]
 
 eq <- function(x){c + ((1-c)*(1/(1+2.71828^(-1.7*(pseudoa*(x-pseudob))))))}          #FUNCTION THAT CREATES ICC BASED ON pseudob AND pseudoa
 
-curve(eq, col="red", xlim=c(-4,4), ylim=c(0,1), main="Item Characteristic Curve")    #PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
+if(plot==TRUE){
+ curve(eq, col="red", xlim=c(-4,4), ylim=c(0,1), main="Item Characteristic Curve")    #PLOTTING CTT-ICC AND IRT-ICC SIDE BY SIDE.
+
+}
 output<-cbind(pseudob, pseudoa)
 return(output)
 }
