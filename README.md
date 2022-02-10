@@ -1,6 +1,6 @@
 # ctticc
 
-Item characteristic curves (ICC's) are visual indicators of important attributes of assessment items - most typically *difficulty* and *discrimination*. Assessment specialists who examine ICC's usually do so from within the psychometric framework of either Item Response Theory (IRT) or Rasch modeling. We propose an extension of this tradition into the Classical Test Theory (CTT) framework. We first propose an application of ICCs with CTT indices then simulate data and quantify similarities and discrepancies between the IRT- and CTT-generated ICCs. Initial results are predominantly promising regaring ICC comparability. 
+Item characteristic curves (ICC's) are visual indicators of important attributes of assessment items - most typically *difficulty* and *discrimination*. Assessment specialists who examine ICC's usually do so from within the psychometric framework of either Item Response Theory (IRT) or Rasch modeling. This `R` package provides an extension of this tradition into the Classical Test Theory (CTT) framework. The package has `psych` and `ggplot2` dependencies that facilitate the estimation of CTT-generated difficulty (_pseudob_) and discrimination (_pseudoa_) "parameters". 
 
 
 |   Quick Links  |
