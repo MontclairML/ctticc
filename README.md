@@ -1,14 +1,14 @@
 # ctticc
 
-As a graduate student, I found that it is almost a rite of passage to take early research and analysis and generate a conference poster allowing for critical feedback. This is also important for facilitating meeting the people in your field at poster sessions at academic meetings. I have also noticed that while many of my fellow graduate students use R and are getting their feet wet with RMarkdown :blush:, we always had to go back to using MS Powerpoint or Keynote or Adobe Illustrator for generating conference posters :unamused:. Posterdown was created as a proof-of-concept (to myself) that it is possible to make a beautiful poster using open source reproducible code.
+Item characteristic curves (ICC's) are visual indicators of important attributes of assessment items - most typically *difficulty* and *discrimination*. Assessment specialists who examine ICC's usually do so from within the psychometric framework of either Item Response Theory (IRT) or Rasch modeling. We propose an extension of this tradition into the Classical Test Theory (CTT) framework. We first propose an application of ICCs with CTT indices then simulate data and quantify similarities and discrepancies between the IRT- and CTT-generated ICCs. Initial results are predominantly promising regaring ICC comparability. 
+
 
 |   Quick Links  |
 |:-------|
-| [**Current Template Styles**](https://github.com/brentthorne/posterdown#current-template-styles) |
-| [**Getting Started**](https://github.com/brentthorne/posterdown#getting-started) |
-| [**Support**](https://github.com/brentthorne/posterdown#support) |
-| [**Wiki**](https://github.com/brentthorne/posterdown/wiki) |
-| [**Showcase**](https://github.com/brentthorne/posterdown/wiki/Showcase) |
+| [**Current Template Styles**](https://github.com/MontclairML/ctticc#current-template-styles) |
+| [**Getting Started**](https://github.com/MontclairML/ctticc#getting-started) |
+| [**Support**](https://github.com/MontclairML/ctticc#support) |
+
 
 ## Current Template Styles
 
